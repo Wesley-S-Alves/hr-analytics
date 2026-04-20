@@ -1,5 +1,12 @@
 # 👥 HR Analytics — People Analytics com IA
 
+[![CI](https://github.com/Wesley-S-Alves/hr-analytics/actions/workflows/ci.yml/badge.svg)](https://github.com/Wesley-S-Alves/hr-analytics/actions/workflows/ci.yml)
+[![Python](https://img.shields.io/badge/python-3.11-blue.svg)](https://www.python.org/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?logo=streamlit&logoColor=white)](https://streamlit.io/)
+[![MLflow](https://img.shields.io/badge/MLflow-0194E2?logo=mlflow&logoColor=white)](https://mlflow.org/)
+[![Ruff](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/astral-sh/ruff/main/assets/badge/v2.json)](https://github.com/astral-sh/ruff)
+
 Sistema de People Analytics que prediz risco de saída de colaboradores, gera insights automatizados com LLM e permite interação via agente conversacional.
 
 ## Funcionalidades
