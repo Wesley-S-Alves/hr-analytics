@@ -1,0 +1,32 @@
+services:
+  api:
+    build:
+      context: .
+      target: runtime
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+      - ./artifacts:/app/artifacts
+    environment:
+      - GEMINI_API_KEY=${GEMINI_API_KEY}
+      - MLFLOW_TRACKING_URI=sqlite:///mlflow.db
+      - DATABASE_URL=sqlite:///data/hr_analytics.db
+    healthcheck:
+      test: ["CMD", "python", "-c", "import httpx; httpx.get('http://localhost:8000/api/v1/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  app:
+    build:
+      context: .
+      target: runtime
+    command: streamlit run app/People_Analytics.py --server.port 8501 --server.address 0.0.0.0
+    ports:
+      - "8501:8501"
+    depends_on:
+      api:
+        condition: service_healthy
+    environment:
+      - API_BASE_URL=http://api:8000/api/v1

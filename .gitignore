@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Ambientes virtuais
+.venv/
+venv/
+env/
+
+# Dados processados (raw é versionado — dataset pequeno)
+data/processed/
+*.db
+
+# Artefatos: incluir modelo atual (self-contained), ignorar novas runs timestamped
+artifacts/models/*/
+!artifacts/models/xgboost_20260419_202829/
+# HTML interativos do SHAP (raramente gerados)
+artifacts/figures/*.html
+
+# MLflow
+mlruns/
+mlflow.db
+
+# Variáveis de ambiente
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Testes
+.pytest_cache/
+htmlcov/
+.coverage

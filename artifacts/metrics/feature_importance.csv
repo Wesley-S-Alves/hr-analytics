@@ -1,0 +1,21 @@
+feature,importance
+cat__over_time_Yes,0.92807543
+ord__stock_option_level,0.31750855
+ord__environment_satisfaction,0.3155889
+num__distance_from_home,0.27185452
+ord__job_satisfaction,0.27001902
+num__num_companies_worked,0.2675249
+cat__business_travel_Travel_Frequently,0.26410976
+num__monthly_income,0.22642866
+ord__job_involvement,0.21703857
+cat__marital_status_Single,0.21700269
+ord__relationship_satisfaction,0.2043516
+num__years_since_last_promotion,0.19738965
+num__age,0.1895075
+num__years_with_curr_manager,0.18567976
+ord__job_level,0.18533625
+cat__job_role_Laboratory Technician,0.15891708
+ord__work_life_balance,0.15634342
+cat__gender_Male,0.15249659
+num__daily_rate,0.14534463
+cat__department_Research & Development,0.13611478
