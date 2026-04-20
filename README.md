@@ -39,7 +39,7 @@ Sistema de People Analytics que prediz risco de saída de colaboradores, gera in
 
 ```bash
 # 1. Clonar e entrar no diretório
-git clone <repo-url>
+git clone https://github.com/Wesley-S-Alves/hr-analytics.git
 cd hr-analytics
 
 # 2. Setup completo (venv + deps + .env + pede GEMINI_API_KEY + popula SQLite)
